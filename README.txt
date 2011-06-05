@@ -9,4 +9,6 @@ This is an optional feature.
 
 It will insert two unordered lists after #myBigList, the first list containing the first half of the items in the original list, the second list containing the second half. The initial list is then removed from the DOM.
 
+If you wish to understand the code, check out jquery.splitlist.commented.js, it's the same code just fully commented to help you out.
+
 Any questions or feature requests, ask @Jack_Franklin on Twitter.
