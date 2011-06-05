@@ -3,8 +3,11 @@
 **/
 
 (function($) {
-	$.fn.splitList = function() {
-		var list = this, topNewList = $("<ul></ul>"), bttmNewList = $("<ul></ul"),
+	$.fn.splitList = function(newListClass) {
+		var newListClass = newListClass || "",
+			list = this, 
+			topNewList = $("<ul></ul>", {"class": newListClass}),
+			bttmNewList = $("<ul></ul>", {"class": newListClass}),
 			listItems = list.children("li"),
 		 	listLength = listItems.size(), 
 			splitPoint = Math.ceil(listLength/2);
